@@ -10,7 +10,17 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 export function SqltalkApp() {
-  const [schema, setSchema] = useState("");
+  const sampleSchema = `create table
+  public.lessons (
+    id serial not null,
+    lesson_title character varying(255) not null,
+    explanation_about_lesson_title text not null,
+    two_short_examples text[] null,
+    course_id integer not null,
+    constraint lessons_pkey primary key (id),
+    constraint lessons_course_id_fkey foreign key (course_id) references courses (id) on update cascade on delete cascade
+  ) tablespace pg_default`
+  const [schema, setSchema] = useState(sampleSchema);
   const [query, setQuery] = useState("");
   const [dbType, setDbType] = useState("mysql");
   const [generatedSql, setGeneratedSql] = useState("");
