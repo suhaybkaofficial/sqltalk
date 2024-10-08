@@ -47,10 +47,16 @@ SQLTalk leverages advanced natural language processing to interpret user queries
    ```
 
 3. Set up environment variables:
-   Create a `.env.local` file in the root directory and add your Google API key:
-   ```
-   NEXT_PUBLIC_GEMINI_API_KEY=your_api_key_here
-   ```
+   - Copy the `.env.example` file to `.env.local`:
+     ```bash
+     cp .env.example .env.local
+     ```
+   - Open `.env.local` and replace `your-gemini-api-key` with your actual Gemini API key:
+     ```
+     NEXT_PUBLIC_GEMINI_API_KEY=your-actual-gemini-api-key-here
+     ```
+   
+   Note: Make sure to keep your API key confidential and never commit it to version control.
 
 4. Run the development server:
    ```bash
