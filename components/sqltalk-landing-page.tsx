@@ -4,6 +4,7 @@ import { Header } from "./header";
 import { Hero } from "./hero";
 import { Features } from "./features";
 import { HowItWorks } from "./how-it-works";
+import { Pricing } from "./pricing"; // Import the new Pricing component
 import { Testimonials } from "./testimonials";
 import { CallToAction } from "./call-to-action";
 import { Footer } from "./footer";
@@ -37,6 +38,7 @@ export function SqltalkLandingPage() {
         </section>
         <Features />
         <HowItWorks />
+        <Pricing /> {/* Add the Pricing component here */}
         <Testimonials />
         <CallToAction />
       </main>

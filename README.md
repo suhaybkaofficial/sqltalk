@@ -13,6 +13,7 @@ SQLTalk leverages advanced natural language processing to interpret user queries
 - Interactive web interface
 - Real-time query generation with loading indicator
 - Syntax highlighting for generated SQL
+- Free plan and Enterprise options available
 
 ## Tech Stack
 
@@ -108,3 +109,19 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Next.js team for the amazing framework
 - shadcn for the beautiful UI components
 - Google for the Generative AI API
+
+## Pricing
+
+SQLTalk offers two pricing tiers:
+
+1. **Free Plan**
+   - 100 queries per month
+   - Basic SQL dialects support
+   - Community support
+
+2. **Enterprise Plan**
+   - Unlimited queries
+   - Advanced SQL dialects support
+   - 24/7 Priority support
+   - Custom integrations
+   - Contact sales for pricing
