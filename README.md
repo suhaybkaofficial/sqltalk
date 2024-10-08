@@ -11,7 +11,7 @@ SQLTalk leverages advanced natural language processing to interpret user queries
 - Natural language to SQL conversion
 - Support for multiple SQL dialects (MySQL, PostgreSQL)
 - Interactive web interface
-- Real-time query generation
+- Real-time query generation with loading indicator
 - Syntax highlighting for generated SQL
 
 ## Tech Stack
@@ -19,6 +19,7 @@ SQLTalk leverages advanced natural language processing to interpret user queries
 - **Frontend**: Next.js, React, TypeScript
 - **UI Components**: Tailwind CSS, shadcn/ui
 - **Syntax Highlighting**: react-syntax-highlighter
+- **Loading Indicator**: react-spinners
 - **AI Integration**: Google's Generative AI (Gemini API)
 - **API**: Next.js API Routes
 - **Deployment**: Vercel (recommended)
@@ -73,7 +74,7 @@ SQLTalk leverages advanced natural language processing to interpret user queries
 2. Input your database schema in the "Schema Input" section.
 3. Enter your query in plain English in the "Natural Language Query" section.
 4. Select your database type (MySQL or PostgreSQL).
-5. Click "Generate SQL" to receive your SQL query.
+5. Click "Generate SQL" to receive your SQL query. A loading indicator will appear while the query is being generated.
 
 ## Configuration
 
